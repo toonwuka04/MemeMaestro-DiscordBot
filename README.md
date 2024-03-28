@@ -2,7 +2,11 @@
 
 ## Author
 Tobechi Onwuka
-tio2003@barnard.edu
+tio2003@barnard.edu,
+Fahitza Quessa
+fdq2000@barnard.edu
+
+
 
 ## Project Title
 *Provide a short and descriptive title for your project.*
