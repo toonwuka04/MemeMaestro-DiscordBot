@@ -40,6 +40,15 @@ fdq2000@barnard.edu
 ## System or Software Architecture Diagram
 *Include a block-based diagram illustrating the architecture of your software or system. This should include major components, such as user interface elements, back-end services, and data storage, and show how they interact. Tools like Lucidchart, Draw.io, or even hand-drawn diagrams photographed and uploaded are acceptable. The purpose of the diagram is to help us understand the architecture of your solution. Diagram asthetics do not matter and will not be graded.*
 
+Example UI:
+<img width="767" alt="Screenshot 2024-03-28 at 1 52 05 AM" src="https://github.com/coms-w3132/final-project-toonwuka04/assets/62598554/524d1dd7-aa5b-4822-96c4-03375a1ea59b">
+
+Code Architecture:
+
+<img width="765" alt="Screenshot 2024-03-28 at 1 52 10 AM" src="https://github.com/coms-w3132/final-project-toonwuka04/assets/62598554/fc8a891d-a641-4f51-b01b-18fe5085bba7">
+
+
+
 ## Development Methodology
 *Describe the methodology you'll use to organize and progress your work.*
 
