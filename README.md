@@ -34,8 +34,21 @@ fdq2000@barnard.edu
 
 *Also list any required hardware, software, on online services you will need. In specific cases, we might be able to lend you hardware or obtain online services. Please email the instructor for more details.*
 
+
+- We need the Discord library and the Discord website itself to code our project. We will not be using any hardware for our project, and we will use APIs: the Dalle API specifically.
+The user can call the bot using a token, for example, $meme, and the meme-bot will generate an auditory response using a popular meme sound.
+The user can also call the bot using a token, for example !respond, and the meme-bot will generate an image given a text input to create a meme. 
+These are the two key features of our project.
+
+
 ## Technical Specification
 *Detail the main algorithms, libraries, and technologies you plan to use. Explain your choice of technology and how it supports your project goals.*
+
+→ Discord Library
+→ Discord as a tool
+→ Dalle API
+→ Using a Queue for polling in Discord bot
+
 
 ## System or Software Architecture Diagram
 *Include a block-based diagram illustrating the architecture of your software or system. This should include major components, such as user interface elements, back-end services, and data storage, and show how they interact. Tools like Lucidchart, Draw.io, or even hand-drawn diagrams photographed and uploaded are acceptable. The purpose of the diagram is to help us understand the architecture of your solution. Diagram asthetics do not matter and will not be graded.*
@@ -62,11 +75,57 @@ Code Architecture:
 
 *Please also describe how (if) you plan test and evaluate your project's functionality. Do you plan to test manually or automatically? Any specific testing frameworks or libraries you plan to use?*
 
+ANSWER:
+
+Firstly, since this is a collaborative project, we have taken the initiative to split the work fairly. 
+Tobechi’s Section: Focus on the feature where the user can call the bot using a token (e.g., $meme) to generate an auditory response using a popular meme sound. This involves working with audio files, integrating them into the bot, and handling command triggers to play these sounds. We plan to meet regularly to discuss progress, roadblocks, and testing feedback. Use this time to align on the next steps and ensure both features integrate well. Although each person is responsible for a different feature, we will review each other’s code and provide feedback to help catch issues early and ensure consistency in the quality and style of the code.
+
+Fahitza’s Section: Concentrate on the image meme generation feature, where the user calls the bot with a different token (e.g., !respond), and the bot generates an image based on the given text input. This part requires integrating with the Dalle API to create memes.
+
+Development Workflow:
+
+For Both Sections: Utilize separate Git branches for developing each feature to keep the main branch stable.
+
+Code Reviews and Pull Requests: Once a feature is ready for review, open a pull request. The other team member reviews the code, providing feedback or approval before it’s merged.
+
+Testing and Feedback:
+Implement unit tests and integration tests to ensure reliability and functionality.
+Set up a test Discord server where we will deploy your bot for live testing.
+
+→ We plan to test our project's functionality using Discord.
+
+Potential Challenges and Roadblocks
+Identify any potential challenges or roadblocks you anticipate facing during the development of your project. For each challenge, propose strategies or solutions you might use to overcome them, which may include getting help from the TAs/instructor. This could include technical hurdles or learning new technologies.
+
+
+→ Setting up a polling system in Discord bot: technical hurdle 
+ Start by researching existing implementations or tutorials on creating polling systems in Discord bots
+
+Break down the polling feature into smaller tasks (e.g., creating a poll, voting, displaying results) and tackle them one at a time.
+
+→ Fahitza has never used an API so this is a learning new technologies hurdle
+	To counter this hurdle, I (Fahitza Quessa), plan to watch API integration videos, and read up on the documentation. If I have any lingering questions, I will consult Tobechi, who is much more familiar with the API, and or the TA’s. 
+-------
+
 ## Potential Challenges and Roadblocks
 *Identify any potential challenges or roadblocks you anticipate facing during the development of your project. For each challenge, propose strategies or solutions you might use to overcome them, which may include getting help from the TAs/instructor. This could include technical hurdles or learning new technologies.*
 
+→ Setting up a polling system in Discord bot: technical hurdle 
+ Start by researching existing implementations or tutorials on creating polling systems in Discord bots
+
+Break down the polling feature into smaller tasks (e.g., creating a poll, voting, displaying results) and tackle them one at a time.
+
+→ Fahitza has never used an API so this is a learning new technologies hurdle
+	To counter this hurdle, I (Fahitza Quessa), plan to watch API integration videos, and read up on the documentation. If I have any lingering questions, I will consult Tobechi, who is much more familiar with the API, and or the TA’s. 
+
+
 ## Additional Resources
 *Include any additional resources, tutorials, or documentation that will be helpful for this project.*
+
+→ Discord Bot Documentation
+→ Dalle API Documentation
+→ 
+
 
 ## Conclusion and Future Work
 *Wrap up your project description with any final thoughts, expectations, or goals not covered in the sections above. Also briefly discuss potential future work, i.e., what could be done next to improve the project.*
