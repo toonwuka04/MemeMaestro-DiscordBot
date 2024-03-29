@@ -11,8 +11,12 @@ fdq2000@barnard.edu
 ## Project Title
 *Provide a short and descriptive title for your project.*
 
+Name: Meme Maestro Bot
+
 ## Project Description
 *Write a short, concise project description of what your project aims to achieve. Include the motivation for this project (why do you want to work on it), the problem your project aims to solve, and the main goals that you want to accomplish within the rest of the semester. Also mention why you think the project might be useful or interesting to others. Keep this section short. A couple of paragraphs would do.*
+
+Our projects aims to create a deployable bot to discord server chats. Fahitza and Tobechi enjoy sharing memes to each other and we were wondering how we could create our love for memes into a cool python project. Tobechi is a frequent user of Discord while Fahitza is a frequent user of reddit, they both decided that since Tobechi was a little familiar with how discord bots work that they can start a discord bot. After figuring that out, we figured that discord bots are a great way for small games to occur within a discord chat server. So in order to use a data structure learned from class we thought about game polls and how users could submit items in a poll that can be voted on. The problem our project aims to solve is entertainment across groups of people within an online format as Discord is a format for chatting with others often. This project could be interesting to others because it combines the common meme culture in todays society and online chatting forums. Since, discord bots can be shared in any server with the right permissions, it means other people could use this memebot for their online games as well.
 
 ## Timeline
 
@@ -122,10 +126,14 @@ Break down the polling feature into smaller tasks (e.g., creating a poll, voting
 ## Additional Resources
 *Include any additional resources, tutorials, or documentation that will be helpful for this project.*
 
-→ Discord Bot Documentation
-→ Dalle API Documentation
-→ 
+→ [Discord Bot Documentation](https://discord.com/developers/docs/intro)
+→ [Dalle API Documentation](https://openai.com/blog/dall-e-api-now-available-in-public-beta)
+
 
 
 ## Conclusion and Future Work
 *Wrap up your project description with any final thoughts, expectations, or goals not covered in the sections above. Also briefly discuss potential future work, i.e., what could be done next to improve the project.*
+
+→ Expectations/Goals: Finish goal of implementing Dalle API, finishing goal of returning poll to user.
+→ Potential future work: Deploying our Memebot to the public
+→ Improvements: Creation of a Web UI that allows users to interact with the bot via website (kinda like a gaming format) 
