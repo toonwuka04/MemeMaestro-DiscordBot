@@ -153,5 +153,5 @@ Break down the polling feature into smaller tasks (e.g., creating a poll, voting
 - I think this would be a good future edit to make. As for right now we'd like to make sure our program works with Discord's bot architecture and possibly move forward with other platforms if we go public.
 - 
 
-#Milestone 2 Goals
+##Milestone 2 Goals
 [Milestone2.pdf](https://github.com/coms-w3132/final-project-toonwuka04/files/14962603/Milestone2.pdf)
