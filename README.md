@@ -137,3 +137,17 @@ Break down the polling feature into smaller tasks (e.g., creating a poll, voting
 → Expectations/Goals: Finish goal of implementing Dalle API, finishing goal of returning poll to user.
 → Potential future work: Deploying our Memebot to the public
 → Improvements: Creation of a Web UI that allows users to interact with the bot via website (kinda like a gaming format) 
+
+
+## Response to TA Feedback
+*how do you plan to incorporate "sound"? Based on this sentence, The user can call the bot using a token, for example, $meme, and the meme-bot will generate an auditory response using a popular meme sound. , it seems DALLE supports this. If it does not, do you have other ways to generate sound?
+
+- We will use a folder and hold 10-15 pre-recorded meme audios from different free audio websites
+
+*will you incorporate any moderation features to prevent inappropriate content or misused of the bot, if used in public?
+
+- We think this could be an added security measure if our project was to go public, at the moment we think the project will be private.
+
+*can you design your architecture so that it supports multiple sources aside from Reddit or discord?
+
+- I think this would be a good future edit to make. As for right now we'd like to make sure our program works with Discord's bot architecture and possibly move forward with other platforms if we go public.
