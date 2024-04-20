@@ -21,7 +21,7 @@ def connect_to_discord():
     @bot.listen()
     async def on_message(message):
         if message.content == "!start" and message.author != bot.user:
-            await message.channel.send("Okay, poll has started. You have 20 seconds to send an images using !poll \{image\}")
+            await message.channel.send("Okay, poll has started. You have 20 seconds to send an image using !poll \{image\}")
 
     @bot.command()
     async def start(ctx):  
@@ -33,8 +33,9 @@ def connect_to_discord():
             poll_ongoing = True
             poll_memes = Queue()
             await asyncio.sleep(20)
-            await ctx.send("POLL DONE! Here are the images nerds:")
+            
             if poll_memes:
+                await ctx.send("POLL DONE! Here are the images nerds:")
                 amount = 1
                 while poll_memes.is_empty() == False:
                     msg = poll_memes.dequeue()
@@ -51,6 +52,8 @@ def connect_to_discord():
 
     @bot.command()
     async def poll(ctx, image):
+        global poll_ongoing
+        global poll_memes
         if poll_ongoing:
             poll_memes.enqueue((ctx.author.name, image))
         else:
