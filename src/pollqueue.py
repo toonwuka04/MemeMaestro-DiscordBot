@@ -1,4 +1,4 @@
-class ArrayQueue:
+class Queue:
     'A queue backed with a built-in Python list'
 
     def __init__(self):
