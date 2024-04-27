@@ -155,3 +155,7 @@ Break down the polling feature into smaller tasks (e.g., creating a poll, voting
 
 ## Milestone 2 Goals
 [Milestone2.pdf](https://github.com/coms-w3132/final-project-toonwuka04/files/14962603/Milestone2.pdf)
+
+## Milestone 3 Demo:
+
+<img width="582" alt="Screenshot 2024-04-27 at 1 08 00 AM" src="https://github.com/coms-w3132/final-project-toonwuka04/assets/62598554/cd665453-957b-43c2-9cf1-b574fabab5ee">
