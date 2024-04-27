@@ -12,6 +12,8 @@ poll_memes = Queue()
 
 
 def connect_to_dalle(token, prompt):
+    #This function takes in discord use prompt and outputs an image
+
     if token is None:
         print("No token provided, exiting...")
         return  # Exit if no token is provided
@@ -30,7 +32,7 @@ def connect_to_dalle(token, prompt):
     # HTTP post server/client requests
     # boiler code from chat api
     data = {
-        "model": "dall-e-2",  # specifying model in use
+        "model": "dall-e-3",  # specifying model in use
         "prompt": prompt,  # prompt we will get from user
         "n": 1,  # number of images to generate
         "size": "1024x1024"  # resolution allowed
@@ -46,7 +48,7 @@ def connect_to_dalle(token, prompt):
 
 
 def connect_to_discord():
-    # This will function will the token for the bot so that we can give the bot other functions
+    # This function takes in user prompt and uses dalle api out to return image
 
     load_dotenv()
     discord_token = os.getenv('DISCORD_TOKEN')
@@ -60,8 +62,7 @@ def connect_to_discord():
     @bot.listen()
     async def on_message(message):
         if message.content == "!start" and message.author != bot.user:
-            await message.channel.send(
-                "Okay, poll has started. You have 20 seconds to send an image using !poll {image}")
+            await message.channel.send("You have 20 seconds to send an image prompt using !poll {prompt}")
 
     @bot.command()
     async def start(ctx):
@@ -70,21 +71,19 @@ def connect_to_discord():
         if not poll_ongoing:
             poll_ongoing = True
             poll_memes = Queue()
-            await ctx.send("You have 20 seconds to send an image prompt using !poll {prompt}")
             await asyncio.sleep(20)
             poll_ongoing = False  # poll has ended so we reset it at this point
 
             if not poll_memes.is_empty():
                 await ctx.send("POLL DONE! Here are the images nerds:")
-                # amount = 1
+                amount = 1
                 while not poll_memes.is_empty():
                     username, prompt = poll_memes.dequeue()
                     image_data = connect_to_dalle(api_token, prompt)
                     if 'data' in image_data and len(image_data['data']) > 0: # error handling
-                        await ctx.send(f"image by @{username}: {image_data['data'][0]['url']}")
-                        # await ctx.send(f'[{amount}] by @{username}: ')
-                    # await ctx.send(image)
-                    # amount += 1
+                        await ctx.send(f"[{amount}] by @{username}:")
+                        await ctx.send(image_data['data'][0]['url'])
+                        amount += 1
                     else:
                         await ctx.send("BRUH don't blame me but i couldn't make the image")
             else:
@@ -94,12 +93,11 @@ def connect_to_discord():
             await ctx.send("Bro, a poll was already started....")
 
     @bot.command()
-    async def poll(ctx, prompt):
+    async def poll(ctx, *, prompt):
         global poll_ongoing
         global poll_memes
         if poll_ongoing:
             poll_memes.enqueue((ctx.author.name, prompt))
-            await ctx.send(f"Prompt given by @{ctx.author.name}")
         else:
             await ctx.send("Bruh, there isn't a poll active right now. Use !start to start one noob.")
 
@@ -108,14 +106,3 @@ def connect_to_discord():
 
 connect_to_discord()
 
-# TOBECHI THIS IS THE OLD POLL
-#
-#
-# async def poll(ctx, image):
-#     global poll_ongoing
-#     global poll_memes
-#     if poll_ongoing:
-#         poll_memes.enqueue((ctx.author.name, image))
-#     else:
-#         await ctx.send("Bruh, there isn't a poll active right now. Use !start to start one noob.")
-#
