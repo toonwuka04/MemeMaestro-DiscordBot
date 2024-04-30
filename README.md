@@ -175,7 +175,7 @@ HOW TO RUN MEMEMAESTRO IN DISCORD~
    
   		 * Special instructions for PC users *
    * if you have a pc you must run this in the terminal: pip install python-dotenv
-   *  to install from dotenv import load_dotenv *
+     to install from dotenv import load_dotenv *
      
 4. Within the # bot-testing channel, type, !start, to start the program
 5. To generate an image, type, !poll {insert_prompt}
