@@ -159,3 +159,13 @@ Break down the polling feature into smaller tasks (e.g., creating a poll, voting
 ## Milestone 3 Demo:
 
 <img width="582" alt="Screenshot 2024-04-27 at 1 08 00 AM" src="https://github.com/coms-w3132/final-project-toonwuka04/assets/62598554/cd665453-957b-43c2-9cf1-b574fabab5ee">
+
+CONCLUSION:
+HOW TO RUN MEMEMAESTRO IN DISCORD~
+1. Join Messing Around With Memes Discord channel: https://discord.gg/78UR2aQc
+2. Run MEMEMAESTRO.PY
+3. Within the # bot-testing channel, type, !start, to start the program
+4. To generate an image, type, !poll {insert_prompt}
+5. Then wait for your image to load
+6. Vote using reactions for your favorite images!
+
