@@ -82,10 +82,12 @@ def connect_to_discord():
                     image_data = connect_to_dalle(api_token, prompt)
                     if 'data' in image_data and len(image_data['data']) > 0: # error handling
                         await ctx.send(f"[{amount}] by @{username}:")
-                        await ctx.send(image_data['data'][0]['url'])
+                        msg = await ctx.send(image_data['data'][0]['url'])
+                        await msg.add_reaction('👍')
                         amount += 1
                     else:
-                        await ctx.send("BRUH don't blame me but i couldn't make the image")
+                        await ctx.send("BRUH don't blame me but i couldn't make the image(s)")
+                await ctx.send("Now, go VOTE with a reaction.")
             else:
                 await ctx.send("Bruh, no one even sent an image. Don't call me again losers.")
             poll_ongoing = False
