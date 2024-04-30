@@ -164,8 +164,21 @@ CONCLUSION:
 HOW TO RUN MEMEMAESTRO IN DISCORD~
 1. Join Messing Around With Memes Discord channel: https://discord.gg/78UR2aQc
 2. Run MEMEMAESTRO.PY
-3. Within the # bot-testing channel, type, !start, to start the program
-4. To generate an image, type, !poll {insert_prompt}
-5. Then wait for your image to load
-6. Vote using reactions for your favorite images!
+	a. when running please make sure all libraries are properly installed, needed libraries include:
+		- import os
+		- from discord.ext import commands
+		- import discord
+		- import asyncio
+		- from dotenv import load_dotenv
+		- from pollqueue import Queue
+		- import requests
+   
+  		 * Special instructions for PC users *
+   * if you have a pc you must run this in the terminal" pip install python-dotenv
+   *  to install from dotenv import load_dotenv *
+     
+4. Within the # bot-testing channel, type, !start, to start the program
+5. To generate an image, type, !poll {insert_prompt}
+6. Then wait for your image to load
+7. Vote using reactions for your favorite images!
 
