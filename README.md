@@ -20,7 +20,7 @@ Our projects aims to create a deployable bot to discord server chats. Fahitza an
 
 
 ## System or Software Architecture Diagram
-*Include a block-based diagram illustrating the architecture of your software or system. This should include major components, such as user interface elements, back-end services, and data storage, and show how they interact. Tools like Lucidchart, Draw.io, or even hand-drawn diagrams photographed and uploaded are acceptable. The purpose of the diagram is to help us understand the architecture of your solution. Diagram asthetics do not matter and will not be graded.*
+*Include a block-based diagram illustrating the architecture of your software or system.*
 
 Example UI:
 
@@ -38,15 +38,6 @@ Code Architecture:
 → [Dalle API Documentation](https://openai.com/blog/dall-e-api-now-available-in-public-beta)
 
 
-
-## Conclusion and Future Work
-*Wrap up your project description with any final thoughts, expectations, or goals not covered in the sections above. Also briefly discuss potential future work, i.e., what could be done next to improve the project.*
-
-→ Expectations/Goals: Finish goal of implementing Dalle API, finishing goal of returning poll to user.
-→ Potential future work: Deploying our Memebot to the public
-→ Improvements: Creation of a Web UI that allows users to interact with the bot via website (kinda like a gaming format) 
-
-
 ## Milestone 2 Goals
 [Milestone2.pdf](https://github.com/coms-w3132/final-project-toonwuka04/files/14962603/Milestone2.pdf)
 
@@ -55,6 +46,7 @@ Code Architecture:
 <img width="582" alt="Screenshot 2024-04-27 at 1 08 00 AM" src="https://github.com/coms-w3132/final-project-toonwuka04/assets/62598554/cd665453-957b-43c2-9cf1-b574fabab5ee">
 
 CONCLUSION:
+
 HOW TO RUN MEMEMAESTRO IN DISCORD~
 1. Join Messing Around With Memes Discord channel: https://discord.gg/78UR2aQc
 2. Run MEMEMAESTRO.PY
